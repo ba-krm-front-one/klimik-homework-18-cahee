@@ -1,0 +1,48 @@
+.ba-post-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.ba-post{
+  width: 370px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 20%, rgba(255, 255, 255, 0.1) 40%), url(../img/green-smoothies.png) 50% no-repeat;
+  background-size: cover;
+  text-align: left;
+  padding: 30px 20px 1px;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+
+  &:nth-child(2){
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 20%, rgba(255, 255, 255, 0.1) 40%), url(../img/growing-food.png) 50% no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(3){
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 20%, rgba(255, 255, 255, 0.1) 40%), url(../img/peticides.png) 50% no-repeat;
+    background-size: cover;
+  }
+  &:hover{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 1);
+  }
+  &__date{
+    font-size: 32px;
+    line-height: 25px;
+    font-weight: 700;
+    width: 60px;
+    text-align: center;
+    background: rgba(38, 38, 38, 0.5);
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 0 0 120px 10px;
+    padding: 3px 0;
+
+    span{
+      font-size: 21px;
+    }
+  }
+  &__undertext{
+    font-size: 13px;
+    font-weight: 300;
+  }
+}

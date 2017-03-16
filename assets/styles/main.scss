@@ -1,0 +1,181 @@
+@import "fonts.scss";
+@import "normalize.scss";
+@import "layout.scss";
+@import "controls.scss";
+@import "variables.scss";
+@import "header/main.scss";
+@import "about/main.scss";
+@import "services/main.scss";
+@import "gallery/main.scss";
+@import "subscribe/main.scss";
+
+.ba-container{
+  padding: 0 20px;
+  max-width: 1210px;
+}
+.ba-title {
+  font-size: 90px;
+  line-height: 120px;
+}
+
+/*-----Blog-----*/
+.ba-blog{
+  background: #b07cf7;
+  padding: 100px 0 120px;
+  text-align: center;
+  color: #fff;
+}
+.ba-blog-description{
+  max-width: 570px;
+  margin: 0 auto;
+}
+.ba-button--blog{
+  width: 200px;
+  height: 55px;
+  background-color: #f72b3b;
+
+  &:hover{
+    background-color: #eb0009;
+  }
+}
+.ba-post-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.ba-post{
+  width: 370px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 20%, rgba(255, 255, 255, 0.1) 40%), url(../img/green-smoothies.png) 50% no-repeat;
+  background-size: cover;
+  text-align: left;
+  padding: 30px 20px 1px;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+
+  &:nth-child(2){
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 20%, rgba(255, 255, 255, 0.1) 40%), url(../img/growing-food.png) 50% no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(3){
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 20%, rgba(255, 255, 255, 0.1) 40%), url(../img/peticides.png) 50% no-repeat;
+    background-size: cover;
+  }
+  &:hover{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 1);
+  }
+  &__date{
+    font-size: 32px;
+    line-height: 25px;
+    font-weight: 700;
+    width: 60px;
+    text-align: center;
+    background: rgba(38, 38, 38, 0.5);
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 0 0 120px 10px;
+    padding: 3px 0;
+
+    span{
+      font-size: 21px;
+    }
+  }
+  &__undertext{
+    font-size: 13px;
+    font-weight: 300;
+  }
+}
+
+
+/*-----Contact-----*/
+.ba-contact{
+  padding: 100px 0 105px;
+  background: url("../img/contact-bg.jpg") 50% no-repeat;
+  background-size: cover;
+  min-height: 866px;
+}
+.ba-contact-description{
+  max-width: 350px;
+  text-align: center;
+  margin: 0 auto 46px;
+}
+.ba-contact-form{
+  max-width: 500px;
+  &__input{
+    background-color:  #00c4c4;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-left: 5px solid #00c4c4;
+    outline: none;
+    padding-left: 15px;
+    color:  #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+    &:last-child{
+      height: 250px;
+    }
+    &:focus{
+      border-left: 5px solid #355b82;
+    }
+  }
+  ::-webkit-input-placeholder {color:#fff; font-weight: 300;}
+  ::-moz-placeholder          {color:#fff; font-weight: 300;}/* Firefox 19+ */
+  :-moz-placeholder           {color:#fff; font-weight: 300;}/* Firefox 18- */
+  :-ms-input-placeholder      {color:#fff; font-weight: 300;}
+}
+.ba-contact-info{
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+  max-width: 320px;
+  margin-right: 170px;
+  &__title{
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+  }
+  p{
+    margin: 0 0 20px;
+  }
+}
+@media all and (max-width: 1050px){
+  .ba-contact-info,
+  .ba-contact-form{
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+
+/*-----Footer-----*/
+.ba-footer{
+  background-color:  #262626;
+  padding: 37px 0 31px;
+  color:  #b9b9b9;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: center;
+
+  &__info{
+    margin: 0;
+
+    span{
+      color: #ff2b58;
+      font-weight: 700;
+    }
+    &:last-child{
+      font-size: 15px;
+    }
+  }
+}
+@media all and (max-width: 650px){
+  .ba-footer__info{
+    float: none;
+  }
+}

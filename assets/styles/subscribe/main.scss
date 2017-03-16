@@ -1,0 +1,14 @@
+@import "form.scss";
+
+.ba-subscribe{
+  background: url("../img/subscribe-bg.jpg") 50% no-repeat;
+  background-size: cover;
+  padding: 145px 0 160px;
+}
+.ba-subscribe-description{
+  max-width: 545px;
+
+  &__title{
+    font-size: 40px;
+  }
+}

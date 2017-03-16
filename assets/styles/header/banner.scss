@@ -1,0 +1,12 @@
+/* Banner */
+.ba-banner {
+  padding: 252px 0;
+
+  &__title {
+    font-size: 60px;
+    font-weight: 800;
+  }
+  &__description{
+    max-width: 370px;
+  }
+}

@@ -1,0 +1,29 @@
+@import "services-list.scss";
+
+/* Services */
+.ba-services {
+  background-color:  #70bfff ;
+  padding: 100px 0 150px;
+}
+.ba-title--services{
+  text-align: center;
+  padding: 220px 0;
+  color: #fff;
+  background: url(../img/tomato.png) no-repeat 50%;
+}
+.ba-services-flex{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+}
+
+
+@media all and (max-width: 1002px){
+  .ba-title--services{
+    background: none;
+    padding: 0;
+  }
+  .ba-services-list{
+    padding: 76px 0 0 0;
+  }
+}

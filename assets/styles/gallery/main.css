@@ -1,0 +1,16 @@
+.ba-section--gallery {
+  background-color: #ffe92f;
+  text-align: center;
+  padding-bottom: 120px; }
+
+.ba-gallery-description {
+  max-width: 580px;
+  margin: 0 auto 46px; }
+
+.ba-button--gallery {
+  width: 200px;
+  height: 55px;
+  background-color: #5585a2;
+  margin-top: 50px; }
+  .ba-button--gallery:hover {
+    background-color: #3e627d; }

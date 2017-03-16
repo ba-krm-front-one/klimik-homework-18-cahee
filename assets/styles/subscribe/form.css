@@ -1,0 +1,19 @@
+.ba-subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px; }
+  .ba-subscribe-form__input {
+    border: 1px solid #262626;
+    width: 570px;
+    height: 55px;
+    margin: 0 30px 20px 0;
+    padding-left: 15px;
+    font-size: 15px;
+    outline: none; }
+  .ba-subscribe-form__submit {
+    background-color: #96b92c;
+    width: 170px;
+    height: 55px;
+    margin: 0 30px 20px 0; }
+    .ba-subscribe-form__submit:hover {
+      background-color: #2eb931; }

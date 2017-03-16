@@ -1,0 +1,21 @@
+@import "posts";
+
+.ba-blog{
+  background: #b07cf7;
+  padding: 100px 0 120px;
+  text-align: center;
+  color: #fff;
+}
+.ba-blog-description{
+  max-width: 570px;
+  margin: 0 auto;
+}
+.ba-button--blog{
+  width: 200px;
+  height: 55px;
+  background-color: #f72b3b;
+
+  &:hover{
+    background-color: #d50009;
+  }
+}
